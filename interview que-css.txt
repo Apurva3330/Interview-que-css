@@ -1,0 +1,167 @@
+                                                                                            Interview questions of CSS.
+
+
+1) Which command is used for the selection of all the elements of a paragraph?
+The p[lang] command is used for selecting all the elements of a paragraph.
+
+2) What is the use of % unit?
+It is used for defining percentage values.
+
+3) What is the difference between logical tags and physical tags?
+        >Physical tags are referred to as presentational markup while logical tags are useless for appearances.
+        >Physical tags are newer versions, on the other hand, logical tags are old and concentrate on content.
+
+4) How to restore the default property value using CSS?
+        >In short, there is no easy way to restore to default values to whatever a browser uses.
+        >The closest option is to use the 'initial' property value, which restores the default CSS values, rather than the browser's default              styles.
+
+5) What is the purpose of the z-index and how is it used?
+        The z-index helps to specify the stack order of positioned elements that may overlap one another. The z-index default value is                 zero and can take on either a positive or negative number.
+         An element with a higher z-index is always stacked above than a lower index.
+
+          Z-Index can take the following values:
+
+Auto: Sets the stack order equal to its parents.
+Number: Orders the stack order.
+Initial: Sets this property to its default value (0).
+Inherit: Inherits this property from its parent element.
+
+6) What are the limitations of CSS?
+Ascending by selectors is not possible
+Limitations of vertical control
+No expressions
+No column declaration
+Pseudo-class not controlled by dynamic behavior
+Rules, styles, targeting specific text not possible
+
+7) What are the CSS frameworks?
+CSS frameworks are the preplanned libraries which make easy and more standard compliant web page styling. The frequently used CSS frameworks are: -
+Bootstrap
+Foundation
+Semantic UI
+Gumby
+Ulkit
+
+8) Why background and color are the separate properties if they should always be set together?
+There are two reasons behind this:
+It enhances the legibility of style sheets. The background property is a complex property in CSS, and if it is combined with color, the complexity will further increase.
+Color is an inherited property while the background is not. So this can make confusion further.
+
+9) Name some CSS style components.
+Some CSS Style components are:
+>Selector
+>Property
+>Value
+
+10) How do you test the webpage in different browsers?
+It’s most important to test a website in different browsers when you’re first designing it, or when making major changes. However, it’s also important to repeat these tests periodically, since browsers go through a lot of updates and changes.
+
+11)What is a Pseudo element? What is pseudo-class?
+Pseudo-classes select regular elements but under certain conditions like when the user is hovering over the link.
+
+:link
+:visited
+:hover
+:active
+:focus
+
+12) Difference between reset vs normalize CSS?. How do they differ?
+Reset CSS: CSS resets aim to remove all built-in browser styling. For example margins, paddings, font-sizes of all elements are reset to be the same. 
+Normalize CSS: Normalize CSS aims to make built-in browser styling consistent across browsers. It also corrects bugs for common browser dependencies.
+
+13)What is the difference between inline, inline-block, and block?
+   >Block Element: The block elements always start on a new line. They will also take space for an entire row or width. List of block elements are <div>, <p>.
+   >Inline Elements: Inline elements don't start on a new line, they appear on the same line as the content and tags beside them. Some examples of inline elements are <a>, <span> , <strong>, and <img> tags. 
+Inline Block Elements: Inline-block elements are similar to inline elements, except they can have padding and margins added on all four sides.
+
+14) What is VH/VW (viewport height/ viewport width) in CSS?
+It’s a CSS unit used to measure the height and width in percentage with respect to the viewport. It is used mainly in responsive design techniques. The measure VH is equal to 1/100 of the height of the viewport. If the height of the browser is 1000px, 1vh is equal to 10px. Similarly, if the width is 1000px, then 1 vw is equal to 10px.
+
+15) How do you specify units in the CSS?. What are the different ways to do it?
+There are different ways to specify units in CSS like px, em, pt, percentage (%). px(Pixel) gives fine-grained control and maintains alignment because 1 px or multiple of 1 px is guaranteed to look sharp. px is not cascade. em maintains relative size. you can have responsive fonts. Em, will cascade 1em is equal to the current font-size of the element or the browser default. If u sent font-size to 16px then 1em = 16px. The common practice is to set default body font-size to 62.5% (equal to 10px).
+pt(point) are traditionally used in print. 1pt = 1/72 inch and it is a fixed-size unit.
+%(percentage) sets font-size relative to the font size of the body. Hence, you have to set the font-size of the body to a reasonable size.
+
+16) Does margin-top or margin-bottom have an effect on inline elements?
+No, it doesn’t affect the inline elements. Inline elements flow with the contents of the page.
+
+17) Who maintains the CSS specifications?
+    World Wide Web Consortium maintains the CSS specifications.
+
+18) In how many ways can a CSS be integrated as a web page?
+
+        CSS can be integrated in three ways:
+
+Inline: Style attribute can be used to have CSS applied HTML elements.
+Embedded: The Head element can have a Style element within which the code can be placed.
+Linked/ Imported: CSS can be placed in an external file and linked via link element.
+
+19) What benefits and demerits do External Style Sheets have? 
+Benefits:
+      One file can be used to control multiple documents having different styles.
+      Multiple HTML elements can have many documents, which can have classes.
+      To group styles in composite situations, methods as selector and grouping are used.
+Demerits:
+      Extra download is needed to import documents having style information.
+      To render the document, the external style sheet should be loaded.
+      Not practical for small style definitions.
+
+20) Discuss the merits and demerits of Embedded Style Sheets?
+Merits of Embedded Style Sheets:
+>Multiple tag types can be created in a single document.
+>Styles, in complex situations, can be applied by using Selector and Grouping methods.
+>Extra download is unnecessary.
+Demerits of Embedded Style Sheets:
+>Multiple documents cannot be controlled.
+
+21) What does CSS selector mean?
+A string equivalent of HTML elements by which declarations or a set of it, is declared and is a link that can be referred for linking HTML and Style sheet is CSS selector.
+
+22) Enlist the media types CSS allows? 
+The design and customization of documents are rendered by media. By applying media control over the external style sheets, they can be retrieved and used by loading it from the network.
+
+23) Differentiate logical tags from physical tags?
+While physical tags are also referred to as presentational mark-up, logical tags are useless for appearances.
+Physical tags are newer versions while logical tags are old and concentrate on content.
+
+24) Differentiate Style Sheet concept from HTML?
+While HTML provides easy structure method, it lacks styling, unlike Style sheets. Moreover, style sheets have better browser capabilities and formatting options.
+
+25) Describe ‘ruleset’?
+Ruleset : Selectors can be attached to other selectors to be identified by ruleset.
+
+It has two parts:
+Selector, e.g. R and
+declaration {text-indent: 11pt}
+
+26) Comment on the Case-sensitivity of CSS ?
+Although, there are no case-sensitivity of CSS, nevertheless font families, URL’s of images, etc is. Only when XML declarations along with XHTML DOCTYPE are being used on the page, CSS is case -sensitive.
+
+27) Define Declaration block?
+A catalog of directions within braces consisting of property, colon and value is called declaration block.
+e.g.: [property 1: value 3]
+
+28) Enlist the various fonts’ attributes?
+They are:
+
+Font-style
+Font-variant
+Font-weight
+Font-size/line-height
+Font-family
+Caption
+Icon
+ 
+29) Why is it easy to insert a file by importing it?
+Importing enables combining external sheets to be inserted in many sheets. Different files and sheets can be used to have different functions. Syntax:
+@import notation, used with <Style> tag.
+
+30) What is the usage of Class selector?
+
+Selectors that are unique to a specific style, are called CLASS selectors. Declaration of style and association with HTML can be made through this. Syntax:
+
+Classname
+it can be A-Z, a-z or digits.
+.top {font: 14em ;}, class selector
+<Body class= “top”> this class is associated with element </body>
+
